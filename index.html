@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>RequireJS Example</title>
+</head>
+<body>
+    <label for="triangleType">Type of Triangle</label>
+    <select id="triangleType">
+        <option value="Right">Right Triangle</option>
+        <option value="Equilateral">Equilateral Triangle</option>
+        <option value=""></option>
+    </select>
+
+    <div ng-view></div>
+    <script src="bower_components/requirejs/require.js" data-main="app.js"></script>
+</body>
+</html>

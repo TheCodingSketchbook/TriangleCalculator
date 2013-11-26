@@ -1,0 +1,21 @@
+{
+  "name": "RequireJSTutorial",
+  "version": "0.0.0",
+  "authors": [
+    "indigo0086 <indigo0086@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "~2.1.9",
+    "angularjs": "*",
+    "angular-route": "~1.2.2",
+    "requirejs-domready": "~2.0.1"
+  }
+}
