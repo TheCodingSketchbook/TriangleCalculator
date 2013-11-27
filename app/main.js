@@ -1,8 +1,9 @@
 require.config({
+
     paths: {
-        "domReady": "/bower_components/requirejs-domready",
-        "angular": "/bower_components/requirejs-domready",
-        "angularRoute": "/bower_components/angular-route/angular-route"
+        "domReady": "../bower_components/requirejs-domready/domReady",
+        "angular": "../bower_components/angular/angular",
+        "angularRoute": "../bower_components/angular-route/angular-route"
 
     },
 
@@ -15,10 +16,13 @@ require.config({
 
 define([
     "require",
-    "angular"
+    "angular",
+    "app"
 ], function(require, ng){
-    require(["domReady!"]), function(document){
-        ng.bootstrap(document, )
-    }
-})
+    "use strict";
+
+    require(["domReady!"], function(document){
+        ng.bootstrap(document, ["app"]);
+    });
+});
 
